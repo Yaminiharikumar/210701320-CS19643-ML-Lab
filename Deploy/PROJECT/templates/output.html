@@ -1,0 +1,126 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+      <center><h1 class="text-4xl text-red-800"></h1></center>
+      {% if prediction_text == 'NORMAL CONDITIONS' %}
+            <div class="mx-auto bg-gray-700 h-screen flex items-center justify-center px-8">
+                <div class="flex flex-col w-full bg-white rounded shadow-lg sm:w-3/4 md:w-1/2 lg:w-3/5">
+                <div class="w-full h-64 bg-top bg-cover rounded-t" ></div>
+                <div class="flex flex-col w-full md:flex-row">
+                    <div class="flex flex-row justify-around p-4 font-bold leading-none text-gray-800 uppercase bg-gray-400 rounded md:flex-col md:items-center md:justify-center md:w-1/4">
+                    
+                        <div class="md:text-3xl">NORMAL</div>
+                        
+                    </div>
+                    <div class="p-4 font-normal text-gray-800 md:w-3/4" style="width: 800px;"><br><br><br><br><br><br><br><br><br>
+                        <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-800"> {{ prediction_text }} </h1><br>
+                        <center><h1 class="text-4xl text-red-800">Treatment during Pregnancy</h1></center><br>
+                        <p class="leading-normal">Prenatal Care: This includes regular check-ups, ultrasounds, and various screenings to monitor the health of both the mother and the baby.
+                            Nutrition: Doctors provide guidance on maintaining a healthy diet during pregnancy to support the mother's health and the baby's development.
+                            Exercise: Safe forms of exercise are encouraged to promote overall health and prepare the body for childbirth.
+                            Monitoring: Doctors monitor factors such as blood pressure, weight gain, and fetal growth to identify any potential issues early on.
+                            Education: Doctors provide information and resources to help expectant mothers understand the changes happening in their bodies and what to expect during labor and delivery.
+                            Support: Emotional support is also an important aspect of prenatal care, as pregnancy can bring about various emotions and concerns.</p><br>
+                        <center><h1 class="text-4xl text-red-800">Description of a Normal Pregnancy</h1></center><br>
+                        <p class="leading-normal">A normal pregnancy typically lasts around 40 weeks, divided into three trimesters.
+                            During the first trimester (weeks 1-12), the baby's organs begin to form, and the mother may experience symptoms such as morning sickness, fatigue, and mood swings.
+                            The second trimester (weeks 13-26) is often referred to as the "honeymoon period" of pregnancy, as many women experience relief from early symptoms and may feel more energetic.
+                            The third trimester (weeks 27-40) is marked by continued fetal growth and preparation for childbirth. The mother may experience increased discomfort as the baby grows larger and presses on internal organs.
+                            Labor typically begins with contractions that gradually become stronger and more regular, leading to the birth of the baby.
+                            After delivery, the mother enters the postpartum period, during which her body undergoes further changes as it recovers from childbirth.</p><br>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        {% elif prediction_text == 'SUSPECT - CEASAREAN'%}
+        <div class="mx-auto bg-gray-700 h-screen flex items-center justify-center px-8">
+            <div class="flex flex-col w-full bg-white rounded shadow-lg sm:w-3/4 md:w-1/2 lg:w-3/5">
+            <div class="w-full h-64 bg-top bg-cover rounded-t" ></div>
+            <div class="flex flex-col w-full md:flex-row">
+                <div class="flex flex-row justify-around p-4 font-bold leading-none text-gray-800 uppercase bg-gray-400 rounded md:flex-col md:items-center md:justify-center md:w-1/4">
+                
+                    <div class="md:text-3xl">CAESEREAN</div>
+                    
+                </div>
+                <div class="p-4 font-normal text-gray-800 md:w-3/4"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-800"> {{ prediction_text }} </h1><br>
+                    <center><h1 class="text-4xl text-red-800">Prevention</h1></center><br>
+                    <p class="leading-normal">Preventing pregnancy can involve various methods, including abstinence, contraception (such as birth control pills, condoms, intrauterine devices (IUDs), or contraceptive implants), and fertility awareness methods. It's important to discuss with a healthcare provider to determine the most suitable method based on individual circumstances and preferences.</p><br>
+                    <center><h1 class="text-4xl text-red-800">Precautions</h1></center><br>
+                    <p class="leading-normal">During pregnancy, it's essential to take certain precautions to ensure the health and safety of both the mother and the baby. This includes avoiding harmful substances such as alcohol, tobacco, and recreational drugs, as well as certain medications that may be harmful during pregnancy. It's also important to eat a balanced diet, get regular exercise, and get plenty of rest. Additionally, pregnant women should avoid certain activities or environments that may pose a risk, such as exposure to toxic chemicals or radiation.</p><br>
+                    <center><h1 class="text-4xl text-red-800">Causes of Pregnancy</h1></center><br>
+                    <p class="leading-normal">Pregnancy occurs when a sperm fertilizes an egg released from the ovary during ovulation. This typically happens through sexual intercourse, but can also occur through assisted reproductive technologies such as in vitro fertilization (IVF). Various factors can affect fertility and the likelihood of conception, including age, overall health, reproductive health, and lifestyle factors.</p><br>
+                        <center><h1 class="text-4xl text-red-800">Medical Treatment</h1></center><br>
+                    <p class="leading-normal">If you suspect you may be pregnant, the first step is to confirm it with a pregnancy test. If the test is positive, it's important to schedule an appointment with a healthcare provider, such as an obstetrician/gynecologist (OB/GYN) or a midwife, for prenatal care. Prenatal care involves regular check-ups to monitor the health of both the mother and the baby, as well as to address any potential complications that may arise during pregnancy.</h1></center><br>
+                    <p class="leading-normal">Patient Education: Provide educational materials about sleep apnea, its causes, effects, and treatment options.
+                        Support Groups: Offer information about local or online support groups where patients can connect with others facing similar challenges and share experiences.
+                        Family Education: Educate family members about sleep apnea and its impact on the patient's health to garner support and understanding.</p><br>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+        {% elif prediction_text == 'PATHOLOGY - ABNORMAL CONDITIONS'%}
+        <div class="mx-auto bg-gray-700 h-screen flex items-center justify-center px-8">
+            <div class="flex flex-col w-full bg-white rounded shadow-lg sm:w-3/4 md:w-1/2 lg:w-3/5">
+            <div class="w-full h-64 bg-top bg-cover rounded-t" ></div>
+            <div class="flex flex-col w-full md:flex-row">
+                <div class="flex flex-row justify-around p-4 font-bold leading-none text-gray-800 uppercase bg-gray-400 rounded md:flex-col md:items-center md:justify-center md:w-1/4">
+                
+                    <div class="md:text-3xl">CRITICAL CONDITIONS</div>
+                    
+                </div>
+                <div class="p-4 font-normal text-gray-800 md:w-3/4"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-800"> {{ prediction_text }} </h1><br>
+                    <center><h1 class="text-4xl text-red-800">Prevention</h1></center><br>
+                    <p class="leading-normal">Regular prenatal care and check-ups.<br>
+                        Maintaining a healthy lifestyle with a balanced diet and regular exercise.<br>
+                        Avoiding alcohol, smoking, and certain medications not recommended during pregnancy.<br>
+                        Managing preexisting health conditions before becoming pregnant.<br>
+                        Genetic counseling if there's a family history of genetic disorders.</p><br>
+                    <center><h1 class="text-4xl text-red-800">Precautions</h1></center><br>
+                    <p class="leading-normal">Avoiding exposure to harmful substances or environments.<br>
+                        Following medical advice and recommendations from healthcare providers.<br>
+                        Being aware of warning signs of complications such as vaginal bleeding, severe abdominal pain, or decreased fetal movement.</p><br>
+                    <center><h1 class="text-4xl text-red-800">Pregnancy Pathology</h1></center><br>
+                    <p class="leading-normal">Gestational Diabetes: High blood sugar levels during pregnancy.<br>
+                        Preeclampsia: High blood pressure and signs of damage to another organ system, most often the liver and kidneys.<br>
+                        Placenta Previa: The placenta covers the cervix, leading to bleeding.<br>
+                        Ectopic Pregnancy: Fertilized egg implants outside the uterus, often in the fallopian tube.<br>
+                        Miscarriage: Loss of pregnancy before 20 weeks gestation.<br>
+                        Preterm Labor: Labor that begins before 37 weeks of pregnancy.<br>
+                        Fetal Growth Restriction: Poor growth of the baby in the womb.<br>
+                        Hyperemesis Gravidarum: Severe nausea and vomiting during pregnancy.</p><br>
+                        <center><h1 class="text-4xl text-red-800">Treatment</h1></center><br>
+                    <p class="leading-normal">Gestational diabetes: Diet, exercise, and insulin therapy.<br>
+                        Preeclampsia: Monitoring, medications to lower blood pressure, and sometimes early delivery.<br>
+                        Placenta Previa: Bed rest, monitoring, and possibly cesarean delivery.<br>
+                        Ectopic Pregnancy: Medication to stop the growth of the embryo or surgery to remove it.<br>
+                        Miscarriage: Sometimes no intervention needed, other times medication or surgical management.</p><br>
+                        <center><h1 class="text-4xl text-red-800">Causes</h1></center><br>
+                    <p class="leading-normal">The causes of pregnancy pathology can be multifactorial and may include genetic factors, lifestyle choices, preexisting health conditions, environmental factors, and sometimes unknown causes.</p><br>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        {% endif %}
+   
+    
+</body>
+</html>

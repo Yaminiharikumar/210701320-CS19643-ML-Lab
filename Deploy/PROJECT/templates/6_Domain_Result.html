@@ -1,0 +1,152 @@
+
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <style>
+    body {
+  /* Typography Declarations */
+  
+  color: #eee5df;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #eee5df;
+}
+/*---------->masthead<----------*/
+
+.masthead {
+  padding: 11em 0;
+  background-image: url('https://i.ytimg.com/vi/Y0oGEKW8VYI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-DoACuAiKAgwIABABGDQgQih_MA8=&rs=AOn4CLAfKBgbhxW_mjoHGdDHz1NvU5NBUg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: solid 1.5em #00639c;
+  font-family: oswald, helvetica, sans-serif;
+  text-align: center;
+  color: cfc7c3;
+}
+
+.masthead-intro {
+  margin-bottom: 0.1em;
+  font-family: "open sans", "helvetica", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px .5px #000;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "oswald", "helvetica", sans-serif;
+  font-size: 5em;
+  letter-spacing: .03em;
+  text-shadow: 1px 1px .5px #000;
+}
+/*-------Body Section--------*/
+
+.aboutme-section,
+.fewthings-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  font-family: Oswald, helvetica, sans-serif;
+  color: #003e9c;
+}
+
+.fewthings-section > h2 {
+  /*typography declarations*/
+  
+  font-size: 14pt;
+}
+
+.aboutme-section > p,
+.fewthings-section > p {
+  /*typography declarations*/
+  
+  font-family: open sans, helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: light;
+}
+
+/*-----------------------links-----------------------*/
+
+/* unvisited link */
+a:link {
+    color: #a6a4cb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+    color: #a6a4cb;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #dcdbeb;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #a6a4cb;
+    text-decoration: none;
+}
+/*---------------footer-----------*/
+
+.footer-content,
+.footer-contact {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00639c;
+  color: #eee5df;
+  padding: 5px; 
+  font-size: 14px;
+}
+
+.footer-contact > li {
+  display: inline-block;
+  margin: 1em;
+  font-size: 16px;
+}
+   </style>
+   <body>
+    <header class="masthead">
+      <p class="masthead-intro"></p>
+      <h1 class="masthead-heading"></h1>
+    </header>
+    
+    <section class="aboutme-section">
+      <h1>TECHNOLOGY:</h1>
+      <h1>Machine Learning</h1>
+      <p>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. IBM has a rich history with machine learning.</p>
+    
+      
+      
+    </section>
+    
+    <section class="fewthings-section">
+      <h1>ALGORITHMS</h1>
+      <h2>Randomforest Classifier Algorithm</h2>
+      <h2>Support Vector Algorithm</h2>
+      <h2>MLP Algorithm</h2><br>
+
+      <h1>BEST ALGORITHM: Randomforest Classifier Algorithm</h1>
+      <h2>Accuracy:90%</h2>
+
+      
+    </section>
+    
+    <footer class="footer-content">
+      
+      <p><a href="{% url 'Home_4' %}">Home</a></p>
+    </footer>
+   </body>
+   </html>

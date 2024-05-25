@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+ body {
+	background-color: #f4f4f4;
+}
+
+.box {
+	border-radius: 150px;
+	background:#fff;
+	position:relative;
+	overflow: hidden;
+	text-align:center;
+}
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.30);
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to right, #a43c3c 0%, #cd6464 100%);
+}
+.box:hover:before {
+    width: 100%;
+}
+.box:hover .image-wrapper {
+	padding:0;
+}
+.box:hover .box-desc {
+	color:#fff;
+}
+.box:hover .social li a {
+	background:#fff;
+	background-image: none;
+	color:#000;
+}
+.box:hover .social li a:hover {
+	background:#1d1d1d;
+	color:#fff;
+}
+.image-wrapper {
+    position: relative;
+	max-width: 210px;
+    max-height: 210px;
+	margin:0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.20);
+}
+.image-wrapper img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.box-desc {
+	position:relative;
+}
+ul.social {
+	padding:0;
+}
+ul.social li {
+	display:inline-block;
+	list-style-type:none;
+}
+ul.social li a {
+	position:relative;
+	width: 36px;
+    height: 36px;
+	background-image: linear-gradient(to right, #a43c3c 0%, #cd6464 100%);
+	display:inline-block;
+	line-height:36px;
+	border-radius:50%;
+	color:#fff;
+	transition: all .5s ease;
+}
+   
+
+.ghost-button {
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: solid 5px rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  transition: 0.2s ease-in-out;
+  margin-left: 500px;
+  
+  
+
+  &:hover {
+    color: white;
+    background-color: #ee3e01;
+  }
+
+  
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="row vh-100">
+            <div class="col-sm-6 col-lg-3 my-auto">
+                <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                        <img class="img-fluid" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1O8ZoR4WKH-cBD3gp9Vk34gUjtsKymqcCupxzgE7SFM_ko1Sp0rOAGLjI9MljxlMJIQ6U3vHwRx0cUKv45t5DLTPbAw4Gubfgw0IOCBLNCoQxR6_VN2z4LtIKLdtlKBMLGsfLNruaZKwFsFsdlg71l5kxn7-utLvv9tgggG79yLz4dL1Ur-3KQUzt7Q/s16000-rw/blank-profile-picture-hd-images-photo-2.JPG" alt="..." />
+                    </div>
+                    <div class="box-desc">
+                        <h5>Jon Doe</h5>
+                        <p>FrontEnd Developer</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 my-auto">
+                <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                        <img class="img-fluid" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1O8ZoR4WKH-cBD3gp9Vk34gUjtsKymqcCupxzgE7SFM_ko1Sp0rOAGLjI9MljxlMJIQ6U3vHwRx0cUKv45t5DLTPbAw4Gubfgw0IOCBLNCoQxR6_VN2z4LtIKLdtlKBMLGsfLNruaZKwFsFsdlg71l5kxn7-utLvv9tgggG79yLz4dL1Ur-3KQUzt7Q/s16000-rw/blank-profile-picture-hd-images-photo-2.JPG" alt="..." />
+                    </div>
+                    <div class="box-desc">
+                        <h5>Jon Doe</h5>
+                        <p>FrontEnd Developer</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="ghost-button"><a href="{% url 'Home_4' %}" style="color: #000;">Home</a></button>
+
+            
+        </div>
+    </div>	
+    
+         
+</body>
+</html>

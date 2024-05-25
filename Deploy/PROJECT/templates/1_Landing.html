@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 75px;
+  background-color: transparent;
+  gap: 5px;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  color: #ff7759;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?cs=srgb&dl=pexels-pixabay-247786.jpg&fm=jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+}
+.container::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  position: relative;
+}
+.content .description {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 2px 0 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  width: 300px;
+  height: max-content;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: end;
+}
+.middle {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.middle::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 30px;
+  height: 200px;
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 2px 0 40px rgba(0, 0, 0, 0.2);
+}
+footer h1 {
+  color: #fff;
+  font-size: 70px;
+  flex: 9;
+}
+footer h1 span {
+  color: #ff7759;
+}
+.go {
+  position: relative;
+  background-color: #ffffff;
+  background: linear-gradient(160deg, #e02900, #6e1400 100%);
+  border-radius: 50%;
+  color: #000000;
+  font-weight: bold;
+  box-shadow: 2px 0 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 30px;
+  overflow: hidden;
+}
+.go::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 50px;
+  background-color: #fff;
+  bottom: 30px;
+  left: 0px;
+  border-radius: 30px;
+}
+.go::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 22px;
+  background-color: #fff;
+  bottom: 25px;
+  left: 28px;
+  border-radius: 30px;
+  transform: rotate(-30deg);
+}
+
+@media screen and (max-width: 1080px) {
+  footer h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 470px) {
+  footer h1 {
+    font-size: 22px;
+  }
+  .go {
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
+    
+  }
+  .go::after,
+  .go::before {
+    display: none;
+  }
+}
+
+</style>
+<body>
+   <div class="container">
+      <nav>
+        <div class="logo">ML PREDICTION</div>
+        
+        
+      </nav>
+      <div class="content">
+        <div class="description">
+          <span style="color: #ffffff"> </span>  
+        </div><br>
+        <!-- <div class="middle"></div>
+      </div> -->
+      <footer>
+        <h1 style="font-size: 35PX;">THE PREDICTION OF <span>CEASAREAN SECTIONS</span></h1>
+        <div class="go"><a href="{% url 'Register_2' %}" style="color: #ffffff;" >GO</a></div>
+      </footer>
+    </div>
+</body>
+</html>
+

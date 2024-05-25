@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+              @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+              [class*="fontawesome-"]:before {
+                font-family: 'fontawesome', sans-serif;
+                color:#ffffff;
+                font-size:30px;
+              }
+              body {
+                margin:0px;
+                padding:0;
+                background-image: url("/static/images/U.jpg");
+                font-family: 'Ubuntu', sans-serif;
+              }
+              .quick-select {
+                background:#460008;
+                height:600px;
+                width:60px;
+                float:left;
+                border-right:3px solid #ffffff;
+                z-index:1;
+                position:relative;
+              }
+              .quick-select span {
+                margin-left:10%;
+              }
+              .menu {
+                float:left;
+                border-radius:0 0 5px 0;
+                border-bottom:3px solid #fff;  
+                z-index:3;
+              }
+              .menu ul {
+                color:#ffffff;
+                list-style:none;
+                background:#3b0007;
+                border-right:3px solid #fff;
+                border-radius:0 0 5px 0;
+                margin:0px;
+                font-size:20px;
+                line-height:40px;
+              }
+              .menu li {
+                width:200px;
+                box-sizing:border-box;
+                padding:5px 0px 5px 10px;
+              }
+              .menu li:hover {
+                background:#ffffff;
+                color:#58000a;
+                cursor:pointer;
+              }
+              .fontawesome-chevron-right{
+                height:100px;
+                width:30px;
+                margin:0;
+                cursor:pointer;
+              }
+              .content {
+                background-image: url("/static/images/U.jpg");
+                height:auto;
+                z-index:1;
+                box-sizing:border-box;
+                padding:20px;
+              }
+              p, h1, h2, h3, h3, h5, h6, small {
+                margin:0;
+                margin-bottom:10px;
+              }
+              h1{font-size:2em; color:#006eff; }
+              p{font-size:1.3em; line-height:28px;}
+              a{color:#0051ff;}
+              small{color:#999;}
+                </style>
+</head>
+<body>
+        <div class="quick-select">
+          <span class="fontawesome-chevron-right"></span>
+        </div>
+
+        <div class="content" style="color:#000;">
+          <h1>BASEPAPER DEMERITS</h1><br><br>
+          <p>•	They did only clustering analysis.</p>
+          <p>•	They’re data more complex to understand. </p>      
+          <p>•	They did not deploy the model.</p>  
+          <p>•	Limited scalability. </p> <br><br><br>
+          
+          <h1>PROPOSED SYSTEM MERITS</h1><br><br>
+          <p>•	We build a framework based application for deployment purpose.</p>
+          <p>•	We use supervised machine learning technique and advance regression analysis.</p>
+          <p>•	High scalability.</p>
+          <p>•	We improved the accuracy level and performance level. </p>
+        </div>
+
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+  <script>
+            $('.menu').hide(0);
+
+        $('.quick-select span').click(function(){
+          $('.menu').slideToggle(500);
+          
+        });
+  </script>
+  
+</body>
+</html>
